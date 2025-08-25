@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Solusi Techno IT - Jasa Kontrol HP Anak & Layanan Teknologi Medan</title>
+    <meta name="description" content="Lindungi anak Anda di dunia digital dengan kontrol gadget dari Solusi Techno IT. Juga menyediakan jasa instalasi software, servis perangkat, dan layanan kreatif di Medan." />
+    <meta name="keywords" content="kontrol gadget anak, servis laptop Medan, instalasi software, jasa desain grafis, admin sosial media, Solusi Techno IT" />
+    <meta name="author" content="Solusi Techno IT" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Preconnect to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Font Inter dari Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Inline CSS untuk gaya khusus -->
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        .hero-bg {
+            background-color: #1a237e;
+            background-image: radial-gradient(circle at top right, #3949ab, #1a237e);
+        }
+        .cta-button {
+            transition: all 0.3s ease;
+        }
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        .service-card, .feature-card {
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: flex-col;
+            height: 100%;
+        }
+        .service-card:hover, .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .whatsapp-sub-button {
+            flex-shrink: 0;
+        }
+        .service-card-content {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        .service-card ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .service-card ul li {
+            margin-bottom: 0.75rem;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50" aria-label="Navigasi Utama">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-indigo-800">
+                Solusi<span class="text-blue-500">Techno</span>
+            </a>
+            <div class="hidden md:flex space-x-8 items-center">
+                <a href="#layanan" class="text-gray-600 hover:text-indigo-800 font-medium transition">Layanan</a>
+                <a href="#mengapa-kami" class="text-gray-600 hover:text-indigo-800 font-medium transition">Keunggulan</a>
+                <a href="#tentang" class="text-gray-600 hover:text-indigo-800 font-medium transition">Tentang Kami</a>
+                <a href="#kontak" class="text-gray-600 hover:text-indigo-800 font-medium transition">Kontak</a>
+            </div>
+            <a href="https://wa.me/6285831459768" target="_blank" rel="noopener" class="hidden md:inline-block bg-green-500 text-white font-semibold px-5 py-2 rounded-lg cta-button hover:bg-green-600 transition">
+                WhatsApp Kami
+            </a>
+            <button id="mobile-menu-button" class="md:hidden focus:outline-none focus:ring-2 focus:ring-indigo-500 p-2 rounded" aria-expanded="false" aria-controls="mobile-menu">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+                <span class="sr-only">Buka menu</span>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pt-2 pb-4 bg-white shadow-lg rounded-b-lg" role="menu">
+            <a href="#layanan" class="block py-2 text-gray-600 hover:text-indigo-800 font-medium" role="menuitem">Layanan</a>
+            <a href="#mengapa-kami" class="block py-2 text-gray-600 hover:text-indigo-800 font-medium" role="menuitem">Keunggulan</a>
+            <a href="#tentang" class="block py-2 text-gray-600 hover:text-indigo-800 font-medium" role="menuitem">Tentang Kami</a>
+            <a href="#kontak" class="block py-2 text-gray-600 hover:text-indigo-800 font-medium" role="menuitem">Kontak</a>
+            <a href="https://wa.me/6285831459768" target="_blank" rel="noopener" class="mt-3 block text-center bg-green-500 text-white font-semibold px-5 py-2 rounded-lg cta-button hover:bg-green-600 transition" role="button">
+                WhatsApp Kami
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-bg text-white" id="beranda">
+            <div class="container mx-auto px-6 py-20 md:py-32 text-center">
+                <h1 class="text-3xl md:text-5xl font-extrabold leading-tight mb-4">Tenang di Era Digital: Solusi Cerdas Kebutuhan Teknologi Anda</h1>
+                <p class="text-lg md:text-xl text-indigo-200 max-w-3xl mx-auto mb-8">Dari melindungi anak Anda di dunia maya, perbaikan perangkat, hingga jasa kreatif. Kami adalah partner teknologi terpercaya Anda di Medan.</p>
+                <a href="#layanan" class="bg-blue-500 text-white font-bold px-8 py-3 rounded-lg text-lg cta-button hover:bg-blue-600 inline-block transition">
+                    Lihat Semua Layanan
+                </a>
+            </div>
+        </section>
+
+        <!-- Layanan Utama: Kontrol Gadget Anak -->
+        <section id="layanan" class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-indigo-800 mb-2">Layanan Unggulan: Kontrol Gadget Anak</h2>
+                    <p class="text-lg text-gray-600 max-w-2xl mx-auto">Ciptakan lingkungan digital yang aman dan positif untuk buah hati Anda.</p>
+                </div>
+                <div class="max-w-4xl mx-auto bg-indigo-50 p-8 rounded-2xl shadow-lg">
+                    <p class="text-gray-700 mb-8 text-center">Khawatir anak kecanduan game atau mengakses konten negatif? Kami hadir dengan solusi profesional untuk membantu Anda memantau, membatasi, dan mengarahkan penggunaan gadget anak secara bijak.</p>
+                    
+                    <h3 class="font-bold text-xl text-indigo-900 mb-6 text-center">Apa yang Anda Dapatkan:</h3>
+                    
+                    <ul class="grid md:grid-cols-2 gap-8">
+                        <li class="flex items-start space-x-4">
+                            <div class="flex-shrink-0 bg-blue-500 text-white rounded-full p-3" aria-hidden="true">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-lg text-gray-800">Kontrol Penuh dari HP Anda</h4>
+                                <p class="text-gray-600">Pantau semua aktivitas gadget anak langsung dari smartphone Anda.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start space-x-4">
+                            <div class="flex-shrink-0 bg-blue-500 text-white rounded-full p-3" aria-hidden="true">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-lg text-gray-800">Manajemen Waktu Cerdas</h4>
+                                <p class="text-gray-600">Atur batas waktu harian untuk setiap game dan aplikasi.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start space-x-4">
+                            <div class="flex-shrink-0 bg-blue-500 text-white rounded-full p-3" aria-hidden="true">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-lg text-gray-800">Blokir Konten Negatif</h4>
+                                <p class="text-gray-600">Blokir akses ke situs web dewasa, kekerasan, dan game berbahaya.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start space-x-4">
+                            <div class="flex-shrink-0 bg-blue-500 text-white rounded-full p-3" aria-hidden="true">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-lg text-gray-800">Konsultasi & Edukasi</h4>
+                                <p class="text-gray-600">Sesi konsultasi agar Anda paham mendampingi anak di era digital.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start space-x-4">
+                            <div class="flex-shrink-0 bg-blue-500 text-white rounded-full p-3" aria-hidden="true">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-lg text-gray-800">Pelacakan Lokasi 24 Jam</h4>
+                                <p class="text-gray-600">Ketahui lokasi anak Anda secara real-time untuk ketenangan pikiran.</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="text-center mt-10">
+                        <a href="https://wa.me/6285831459768?text=Halo,%20saya%20tertarik%20dengan%20layanan%20kontrol%20gadget%20anak." target="_blank" rel="noopener" class="bg-green-500 text-white font-bold px-8 py-3 rounded-lg text-lg cta-button hover:bg-green-600 inline-block transition">
+                            Amankan Gadget Anak Anda Hari Ini!
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Layanan Lainnya -->
+        <section class="py-16 md:py-24 bg-gray-100">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-indigo-800 mb-2">Layanan Kami Lainnya</h2>
+                    <p class="text-lg text-gray-600 max-w-2xl mx-auto">Solusi lengkap untuk semua kebutuhan teknologi Anda, dari software hingga servis perangkat.</p>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Layanan Software & Akun -->
+                    <div class="bg-white p-8 rounded-xl shadow-md service-card">
+                        <div class="service-card-content">
+                            <h3 class="text-2xl font-bold text-indigo-800 mb-4">Layanan Software & Akun</h3>
+                            <p class="text-gray-600 mb-6">Lewati proses instalasi yang rumit. Kami memastikan semua software esensial dan akun penting siap digunakan, dioptimalkan untuk performa terbaik.</p>
+                            <ul class="space-y-4 text-gray-700">
+                                <li class="flex justify-between items-center">
+                                    <span>Pembuatan Akun Google Anak</span>
+                                    <a href="https://wa.me/6285831459768?text=Halo,%20saya%20tertarik%20jasa%20pembuatan%20akun%20Google%20anak." target="_blank" rel="noopener" class="whatsapp-sub-button bg-green-500 text-white text-sm font-semibold px-3 py-1 rounded-md cta-button hover:bg-green-600 transition">Pesan</a>
+                                </li>
+                                <li class="flex justify-between items-center">
+                                    <span>Instalasi Aplikasi Pembelajaran</span>
+                                    <a href="https://wa.me/6285831459768?text=Halo,%20saya%20tertarik%20jasa%20instalasi%20aplikasi%20pembelajaran." target="_blank" rel="noopener" class="whatsapp-sub-button bg-green-500 text-white text-sm font-semibold px-3 py-1 rounded-md cta-button hover:bg-green-600 transition">Pesan</a>
+                                </li>
+                                <li class="flex justify-between items-center">
+                                    <span>Instalasi Microsoft Office</span>
+                                    <a href="https://wa.me/6285831459768?text=Halo,%20saya%20tertarik%20jasa%20instalasi%20Microsoft%20Office." target="_blank" rel="noopener" class="whatsapp-sub-button bg-green-500 text-white text-sm font-semibold px-3 py-1 rounded-md cta-button hover:bg-green-600 transition">Pesan</a>
+                                </li>
+                                <li class="flex justify-between items-center">
+                                    <span>Instalasi Aplikasi Desain</span>
+                                    <a href="https://wa.me/6285831459768?text=Halo,%20saya%20tertarik%20jasa%20instalasi%20aplikasi%20desain." target="_blank" rel="noopener" class="whatsapp-sub-button bg-green-500 text-white text-sm font-semibold px-3 py-1 rounded-md cta-button hover:bg-green-600 transition">Pesan</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Layanan Servis Perangkat -->
+                    <div class="bg-white p-8 rounded-xl shadow-md service-card">
+                        <div class="service-card-content">
+                            <h3 class="text-2xl font-bold text-indigo-800 mb-4">Layanan Servis Perangkat</h3>
+                            <p class="text-gray-600 mb-6">Perangkat lemot atau rusak total? Tim ahli kami siap mendiagnosis dan memperbaiki berbagai masalah agar aktivitas Anda tidak terganggu lama.</p>
+                            <ul class="space-y-4 text-gray-700">
+                                <li class="flex justify-between items-center">
+                                    <span>Servis Laptop/Komputer/HP</span>
+                                    <a href="https://wa.me/6285831459768?text=Halo,%20saya%20butuh%20jasa%20servis%20laptop/komputer/HP." target="_blank" rel="noopener" class="whatsapp-sub-button bg-green-500 text-white text-sm font-semibold px-3 py-1 rounded-md cta-button hover:bg-green-600 transition">Pesan</a>
+                                </li>
+                                <li class="flex justify-between items-center">
+                                    <span>Servis Printer</span>
+                                    <a href="https://wa.me/6285831459768?text=Halo,%20saya%20butuh%20jasa%20servis%20printer." target="_blank" rel="noopener" class="whatsapp-sub-button bg-green-500 text-white text-sm font-semibold px-3 py-1 rounded-md cta-button hover:bg-green-600 transition">Pesan</a>
+                                </li>
+                                <li class="flex justify-between items-center">
+                                    <span>Bersihkan Virus & Malware</span>
+                                    <a href="https://wa.me/6285831459768?text=Halo,%20saya%20butuh%20jasa%20pembersihan%20virus." target="_blank" rel="noopener" class="whatsapp-sub-button bg-green-500 text-white text-sm font-semibold px-3 py-1 rounded-md cta-button hover:bg-green-600 transition">Pesan</a>
+                                </li>
+                                <li class="flex justify-between items-center">
+                                    <span>Backup & Recovery Data</span>
+                                    <a href="https://wa.me/6285831459768?text=Halo,%20saya%20butuh%20jasa%20backup%20&%20recovery%20data." target="_blank" rel="noopener" class="whatsapp-sub-button bg-green-500 text-white text-sm font-semibold px-3 py-1 rounded-md cta-button hover:bg-green-600 transition">Pesan</a>
+                                </li>
+                                <li class="flex justify-between items-center">
+                                    <span>Optimasi Kecepatan</span>
+                                    <a href="https://wa.me/6285831459768?text=Halo,%20saya%20butuh%20jasa%20optimasi%20kecepatan%20laptop/PC." target="_blank" rel="noopener" class="whatsapp-sub-button bg-green-500 text-white text-sm font-semibold px-3 py-1 rounded-md cta-button hover:bg-green-600 transition">Pesan</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Jasa Digital & Kreatif -->
+                    <div class="bg-white p-8 rounded-xl shadow-md service-card">
+                        <div class="service-card-content">
+                            <h3 class="text-2xl font-bold text-indigo-800 mb-4">Jasa Digital & Kreatif</h3>
+                            <p class="text-gray-600 mb-6">Dari membangun citra brand yang kuat hingga mengelola kehadiran online, kami menyediakan jasa kreatif untuk mendukung pertumbuhan bisnis Anda.</p>
+                            <ul class="space-y-4 text-gray-700">
+                                <li class="flex justify-between items-center">
+                                    <span>Desain Grafis (Logo, Brosur)</span>
+                                    <a href="https://wa.me/6285831459768?text=Halo,%20saya%20tertarik%20dengan%20jasa%20desain%20grafis." target="_blank" rel="noopener" class="whatsapp-sub-button bg-green-500 text-white text-sm font-semibold px-3 py-1 rounded-md cta-button hover:bg-green-600 transition">Pesan</a>
+                                </li>
+                                <li class="flex justify-between items-center">
+                                    <span>Konsultasi Pembelian Gadget</span>
+                                    <a href="https://wa.me/6285831459768?text=Halo,%20saya%20ingin%20konsultasi%20pembelian%20gadget." target="_blank" rel="noopener" class="whatsapp-sub-button bg-green-500 text-white text-sm font-semibold px-3 py-1 rounded-md cta-button hover:bg-green-600 transition">Pesan</a>
+                                </li>
+                                <li class="flex justify-between items-center">
+                                    <span>Admin Sosial Media</span>
+                                    <a href="https://wa.me/6285831459768?text=Halo,%20saya%20tertarik%20dengan%20jasa%20admin%20sosial%20media." target="_blank" rel="noopener" class="whatsapp-sub-button bg-green-500 text-white text-sm font-semibold px-3 py-1 rounded-md cta-button hover:bg-green-600 transition">Pesan</a>
+                                </li>
+                                <li class="flex justify-between items-center">
+                                    <span>Jasa Fotografer</span>
+                                    <a href="https://wa.me/6285831459768?text=Halo,%20saya%20tertarik%20dengan%20jasa%20fotografer." target="_blank" rel="noopener" class="whatsapp-sub-button bg-green-500 text-white text-sm font-semibold px-3 py-1 rounded-md cta-button hover:bg-green-600 transition">Pesan</a>
+                                </li>
+                                <li class="flex justify-between items-center">
+                                    <span>Pembayaran & Top-Up</span>
+                                    <a href="https://wa.me/6285831459768?text=Halo,%20saya%20butuh%20jasa%20pembayaran%20atau%20top-up." target="_blank" rel="noopener" class="whatsapp-sub-button bg-green-500 text-white text-sm font-semibold px-3 py-1 rounded-md cta-button hover:bg-green-600 transition">Pesan</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us Section -->
+        <section id="mengapa-kami" class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-indigo-800 mb-2">Partner Teknologi Terpercaya di Medan</h2>
+                    <p class="text-lg text-gray-600 max-w-2xl mx-auto">Kami tidak hanya memberikan solusi, tapi juga ketenangan pikiran.</p>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="text-center p-6 bg-gray-50 rounded-lg feature-card">
+                        <div class="flex items-center justify-center h-16 w-16 rounded-full bg-indigo-100 text-indigo-600 mx-auto mb-4" aria-hidden="true">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Cepat & Responsif</h3>
+                        <p class="text-gray-600">Kami menghargai waktu Anda. Dapatkan solusi masalah teknologi tanpa menunggu lama.</p>
+                    </div>
+                    <div class="text-center p-6 bg-gray-50 rounded-lg feature-card">
+                        <div class="flex items-center justify-center h-16 w-16 rounded-full bg-indigo-100 text-indigo-600 mx-auto mb-4" aria-hidden="true">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Harga Jujur & Terjangkau</h3>
+                        <p class="text-gray-600">Solusi berkualitas tidak harus mahal. Harga kami transparan tanpa biaya tersembunyi.</p>
+                    </div>
+                    <div class="text-center p-6 bg-gray-50 rounded-lg feature-card">
+                        <div class="flex items-center justify-center h-16 w-16 rounded-full bg-indigo-100 text-indigo-600 mx-auto mb-4" aria-hidden="true">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Profesional & Amanah</h3>
+                        <p class="text-gray-600">Ditangani oleh teknisi ahli untuk memastikan hasil terbaik dan keamanan data Anda.</p>
+                    </div>
+                    <div class="text-center p-6 bg-gray-50 rounded-lg feature-card">
+                        <div class="flex items-center justify-center h-16 w-16 rounded-full bg-indigo-100 text-indigo-600 mx-auto mb-4" aria-hidden="true">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Layanan Panggilan</h3>
+                        <p class="text-gray-600">Tidak perlu repot keluar rumah. Kami siap datang langsung ke lokasi Anda di area Medan.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tentang Kami -->
+        <section id="tentang" class="py-16 md:py-24 bg-gray-100">
+            <div class="container mx-auto px-6">
+                <div class="max-w-4xl mx-auto text-center">
+                    <h2 class="text-3xl md:text-4xl font-bold text-indigo-800 mb-4">Solusi Techno IT: Partner Teknologi Anda</h2>
+                    <p class="text-lg text-gray-600 mb-6">Berawal dari keprihatinan terhadap dampak teknologi pada anak dan kesulitan yang dihadapi banyak orang, Solusi Techno IT hadir di Medan. Misi kami sederhana: memberikan solusi teknologi yang praktis, terpercaya, dan mudah diakses bagi keluarga dan usaha lokal.</p>
+                    <p class="text-gray-600 mb-8">Kami bukan hanya penyedia jasa, tetapi juga partner Anda dalam menavigasi dunia digital. Dengan keahlian dan pelayanan ramah, kami berkomitmen memberikan ketenangan pikiran bagi para orang tua dan kelancaran produktivitas bagi para profesional.</p>
+                    <a href="https://portofolio-ridho-pasi.vercel.app/" target="_blank" rel="noopener" class="bg-indigo-700 text-white font-bold px-8 py-3 rounded-lg text-lg cta-button hover:bg-indigo-800 inline-block transition">
+                        Lihat Portofolio Kami
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="bg-blue-600">
+            <div class="container mx-auto px-6 py-16 text-center text-white">
+                <h2 class="text-3xl font-bold mb-4">Punya Masalah Teknologi?</h2>
+                <p class="text-blue-200 text-lg max-w-2xl mx-auto mb-8">Jangan ragu untuk bertanya. Konsultasikan kebutuhan Anda bersama kami sekarang, gratis!</p>
+                <a href="https://wa.me/6285831459768" target="_blank" rel="noopener" class="bg-white text-blue-600 font-bold px-8 py-3 rounded-lg text-lg cta-button hover:bg-gray-100 inline-block transition">
+                    WhatsApp: 085831459768
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="kontak" class="bg-gray-800 text-white">
+        <div class="container mx-auto px-6 py-12">
+            <div class="md:flex md:justify-between text-center md:text-left">
+                <div class="mb-8 md:mb-0">
+                    <h4 class="text-xl font-bold mb-2">Solusi Techno IT</h4>
+                    <p class="text-gray-400">Partner Teknologi Keluarga dan Usaha Anda di Medan.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Hubungi Kami</h4>
+                    <ul class="space-y-3">
+                        <li>
+                            <a href="https://wa.me/6285831459768" target="_blank" rel="noopener" class="flex items-center justify-center md:justify-start text-gray-300 hover:text-white transition">
+                                <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path d="M10.25 1.25a.75.75 0 00-1.5 0v1.165a.75.75 0 001.5 0V1.25zM10 3.5a.75.75 0 01.75.75v1.165a.75.75 0 01-1.5 0V4.25A.75.75 0 0110 3.5zM10 6.5a.75.75 0 01.75.75v1.165a.75.75 0 01-1.5 0V7.25A.75.75 0 0110 6.5zM10 9.5a.75.75 0 01.75.75v1.165a.75.75 0 01-1.5 0v-1.165a.75.75 0 01.75-.75zM4.25 1.25a.75.75 0 00-1.5 0v1.165a.75.75 0 001.5 0V1.25zM4.25 4.25a.75.75 0 00-1.5 0v1.165a.75.75 0 001.5 0V4.25zM4.25 7.25a.75.75 0 00-1.5 0v1.165a.75.75 0 001.5 0V7.25zM4.25 10.25a.75.75 0 00-1.5 0v1.165a.75.75 0 001.5 0v-1.165zM7.25 1.25a.75.75 0 00-1.5 0v1.165a.75.75 0 001.5 0V1.25zM7.25 4.25a.75.75 0 00-1.5 0v1.165a.75.75 0 001.5 0V4.25zM7.25 7.25a.75.75 0 00-1.5 0v1.165a.75.75 0 001.5 0V7.25zM15.75 1.25a.75.75 0 00-1.5 0v1.165a.75.75 0 001.5 0V1.25zM12.75 1.25a.75.75 0 00-1.5 0v1.165a.75.75 0 001.5 0V1.25zM15.75 4.25a.75.75 0 00-1.5 0v1.165a.75.75 0 001.5 0V4.25zM12.75 4.25a.75.75 0 00-1.5 0v1.165a.75.75 0 001.5 0V4.25zM15.75 7.25a.75.75 0 00-1.5 0v1.165a.75.75 0 001.5 0V7.25zM12.75 7.25a.75.75 0 00-1.5 0v1.165a.75.75 0 001.5 0V7.25zM15.75 10.25a.75.75 0 00-1.5 0v1.165a.75.75 0 001.5 0v-1.165zM12.75 10.25a.75.75 0 00-1.5 0v1.165a.75.75 0 001.5 0v-1.165z"></path>
+                                    <path fill-rule="evenodd" d="M2 13.25c0-1.07.39-2.06.99-2.85l.1-.13a.75.75 0 011.19.92l-.1.13c-.5.68-.88 1.5-.88 2.43V16.5a.75.75 0 00.75.75h14a.75.75 0 00.75-.75v-3.25c0-.93-.39-1.75-.88-2.43l-.1-.13a.75.75 0 111.19-.92l.1.13c.6.79.99 1.78.99 2.85v3.25A2.25 2.25 0 0117.75 18H2.25A2.25 2.25 0 010 15.75v-2.5z"></path>
+                                </svg>
+                                <span>WhatsApp: 085831459768</span>
+                            </a>
+                        </li>
+                        <li class="flex items-center justify-center md:justify-start text-gray-300">
+                            <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"></path>
+                                <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span>IG/FB: @solusitechno.it</span>
+                        </li>
+                        <li class="flex items-center justify-center md:justify-start text-gray-300">
+                            <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span>Area: Kota Medan & Sekitarnya</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-8 border-t border-gray-700 pt-6 text-center text-gray-400 text-sm">
+                <p>&copy; 2024 Solusi Techno IT. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        let isMenuOpen = false;
+
+        mobileMenuButton.addEventListener('click', () => {
+            isMenuOpen = !isMenuOpen;
+            mobileMenu.classList.toggle('hidden');
+            mobileMenuButton.setAttribute('aria-expanded', isMenuOpen);
+        });
+
+        // Close menu when a link is clicked
+        const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                mobileMenuButton.setAttribute('aria-expanded', 'false');
+                isMenuOpen = false;
+            });
+        });
+    </script>
+</body>
+</html>
